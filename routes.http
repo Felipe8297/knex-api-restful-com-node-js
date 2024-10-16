@@ -1,0 +1,24 @@
+### List Transaction
+
+GET http://localhost:3333/transactions
+
+### List Transaction by ID
+
+GET http://localhost:3333/transactions/283146e7-d611-4b16-8020-94a84fb49be9
+
+
+### Get Summary 
+
+GET http://localhost:3333/transactions/summary
+
+
+### Create Transaction
+
+POST http://localhost:3333/transactions
+Content-Type: application/json
+
+{
+    "title": "Swile",
+    "amount": 1000,
+    "type": "credit"
+}
